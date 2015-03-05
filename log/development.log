@@ -2403,3 +2403,444 @@ ActionView::Template::Error (undefined local variable or method `music' for #<#<
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 203ms (Views: 154.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 14:12:58 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 14:12:59 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 14:12:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:12:59 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:28:40 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 96ms (Views: 90.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:28:40 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 14:28:40 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 14:28:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 14:28:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:28:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 14:28:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 14:28:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 14:28:41 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 14:28:41 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 14:28:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:28:41 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:30:56 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 105ms (Views: 97.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 14:30:56 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 14:30:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 14:30:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:30:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 14:30:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 14:30:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 14:30:57 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 14:30:57 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 14:30:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:30:57 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:55:40 -0500
+
+SyntaxError (C:/Users/Orel M. Fligelman/hubb_music/app/controllers/musics_controller.rb:57: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/musics_controller.rb:57: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:55:55 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 136ms
+
+IOError (closed stream):
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/http/response.rb:87:in `write'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:124:in `write'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:233:in `rescue in block in process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:246:in `block in process'
+
+
+
+IOError (closed stream):
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/http/response.rb:87:in `write'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:124:in `write'
+  C:/Users/Orel M. Fligelman/hubb_music/app/controllers/musics_controller.rb:11:in `block in index'
+  C:/Users/Orel M. Fligelman/hubb_music/app/controllers/musics_controller.rb:10:in `times'
+  C:/Users/Orel M. Fligelman/hubb_music/app/controllers/musics_controller.rb:10:in `index'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/base.rb:189:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:113:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:113:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:86:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:86:in `run_callbacks'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications.rb:159:in `block in instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications.rb:159:in `instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activerecord-4.1.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/base.rb:136:in `process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionview-4.1.8/lib/action_view/rendering.rb:30:in `process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:229:in `block in process'
+
+
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 14:55:55 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 14:55:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 14:55:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:55:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 14:55:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 14:55:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 14:55:56 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 14:55:56 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 14:55:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:55:56 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 125ms
+
+IOError (closed stream):
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/http/response.rb:87:in `write'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:124:in `write'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:233:in `rescue in block in process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:246:in `block in process'
+
+
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rendering.rb:15:in `render'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activerecord-4.1.8/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:40:in `render'
+  C:/Users/Orel M. Fligelman/hubb_music/app/controllers/musics_controller.rb:10:in `index'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/base.rb:189:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:113:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:113:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:86:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:86:in `run_callbacks'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications.rb:159:in `block in instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications.rb:159:in `instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activerecord-4.1.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/base.rb:136:in `process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionview-4.1.8/lib/action_view/rendering.rb:30:in `process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:229:in `block in process'
+
+
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:56:59 -0500
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-05 14:59:35 -0500
+Processing by MusicsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered musics/_form.html.erb (37.0ms)
+  Rendered musics/new.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 143ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-05 15:00:04 -0500
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7irHojYPXwick8sdbKbfbwimwnmDAzhyja7jQ9W24U8=", "music"=>{"title"=>"dff", "description"=>"dfsdf", "name"=>"dfdf", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x61230f0 @tempfile=#<Tempfile:C:/Users/ORELM~1.FLI/AppData/Local/Temp/RackMultipart20150305-2288-121du8y>, @original_filename="Carmela_Fligelman.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"Carmela_Fligelman.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Unpermitted parameters: attachment
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "musics" ("created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-03-05 20:00:04.512662"], ["description", "dfsdf"], ["name", "dfdf"], ["title", "dff"], ["updated_at", "2015-03-05 20:00:04.512662"]]
+  [1m[35m (72.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 84ms (ActiveRecord: 73.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-05 15:00:04 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 84ms
+
+IOError (closed stream):
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/http/response.rb:87:in `write'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:124:in `write'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:233:in `rescue in block in process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:246:in `block in process'
+
+
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rendering.rb:15:in `render'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activerecord-4.1.8/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:40:in `render'
+  C:/Users/Orel M. Fligelman/hubb_music/app/controllers/musics_controller.rb:10:in `index'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/base.rb:189:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:113:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:113:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:229:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:166:in `block in halting'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:86:in `call'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/callbacks.rb:86:in `run_callbacks'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications.rb:159:in `block in instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activesupport-4.1.8/lib/active_support/notifications.rb:159:in `instrument'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/activerecord-4.1.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/abstract_controller/base.rb:136:in `process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionview-4.1.8/lib/action_view/rendering.rb:30:in `process'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_controller/metal/live.rb:229:in `block in process'
+
+
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 15:00:04 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 15:00:05 -0500
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-05 15:01:16 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 19ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 15:01:21 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 5ms

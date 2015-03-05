@@ -1,4 +1,5 @@
 class MusicsController < ApplicationController
+  include ActionController::Live
   before_action :set_music, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
@@ -6,6 +7,12 @@ class MusicsController < ApplicationController
   def index
     @musics = Music.all
     respond_with(@musics)
+    render stream: true
+    10.times do
+      response.stream.write "new line"
+    end
+  ensure
+    response.stream.close
   end
 
   def show
