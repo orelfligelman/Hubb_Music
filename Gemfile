@@ -44,4 +44,6 @@ gem "carrierwave"
 gem 'bootstrap-sass', '~> 2.3.2'
 gem 'carrierwave-video-thumbnailer'
 gem 'carrierwave-video'
-gem "puma"
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'slim'
