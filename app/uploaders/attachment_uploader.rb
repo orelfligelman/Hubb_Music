@@ -18,6 +18,7 @@ class AttachmentUploader < CarrierWave::Uploader::Base
   storage :file
   # storage :fog
 
+
   # def encode
   #   encode_video(:mp4, DEFAULTS) do |movie, params|
   #     if movie.height < 720

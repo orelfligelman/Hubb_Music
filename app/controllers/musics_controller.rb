@@ -1,9 +1,15 @@
 class MusicsController < ApplicationController
   before_action :set_music, only: [:show, :edit, :update, :destroy]
-
   respond_to :html
 
+  def send_file
+    puts "*" * 100
+    file_path = "#{Rails.root}/public/#{params[:attachment]}"
+    send_file file_path, :filename => params[:attachment], :disposition => 'attachment'
+  end
+
   def index
+    puts "*" * 100
     @musics = Music.all
     respond_with(@musics)
   end

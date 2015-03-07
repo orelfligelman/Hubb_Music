@@ -19,7 +19,9 @@
       <tr>
         <td><%= music.title %></td>
         <td><%= music.description %></td>
-        <td><%= music.attachment %></td>
+        <td><%= link_to url_for :controller => 'musics', :action => 'send_file'%></td>
+        <td><%= audio_tag "{music.attachment_url}" %></td>
+        <td><%= link_to music.attachment.url %></td>
         <td><%= link_to 'Show', music %></td>
         <td><%= link_to 'Edit', edit_music_path(music) %></td>
         <td><%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' } %></td>

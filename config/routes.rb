@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :musics
   root to: "musics#index"
   mount Sidekiq::Web, at: '/sidekiq'
+  get 'musics/send_file' => 'musics#send_file'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

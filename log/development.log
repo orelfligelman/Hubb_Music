@@ -11929,3 +11929,3176 @@ Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 19:27:30 -050
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 19:27:30 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 20:34:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+Completed 401 Unauthorized in 27ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-05 20:34:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 285ms (Views: 270.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:00 -0500
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-05 20:35:09 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9EUqppMnyoKVWiLSD8wThHtgZ6gpCUVb12QrSUGxVcI=", "user"=>{"email"=>"orelmfligelman@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'orelmfligelman@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2015-03-06 01:35:10.024276"], ["sign_in_count", 2], ["updated_at", "2015-03-06 01:35:10.026276"]]
+  [1m[36m (60.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 246ms (ActiveRecord: 63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 118ms (Views: 107.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:10 -0500
+
+
+Started GET "/musics/8" for 127.0.0.1 at 2015-03-05 20:35:12 -0500
+Processing by MusicsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered musics/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 100ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-05 20:35:14 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 111ms (Views: 104.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-05 20:35:17 -0500
+Processing by MusicsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered musics/_form.html.erb (11.0ms)
+  Rendered musics/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 102ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-05 20:35:51 -0500
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tYxBappzrn63XAf0SV8NR021o4Wqs6xnryAUd9yKKTY=", "music"=>{"title"=>"b", "description"=>"g", "name"=>"gh", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x2a09840 @tempfile=#<Tempfile:C:/Users/ORELM~1.FLI/AppData/Local/Temp/RackMultipart20150305-12324-1eg2ewr>, @original_filename="Daft Punk - Beyond.mp3", @content_type="audio/mpeg", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"Daft Punk - Beyond.mp3\"\r\nContent-Type: audio/mpeg\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["attachment", "Daft_Punk_-_Beyond.mp3"], ["created_at", "2015-03-06 01:35:52.243691"], ["description", "g"], ["name", "gh"], ["title", "b"], ["updated_at", "2015-03-06 01:35:52.243691"]]
+  [1m[35m (67.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 1037ms (ActiveRecord: 69.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 20:35:52 -0500
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-05 20:40:49 -0500
+Processing by MusicsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered musics/_form.html.erb (3.0ms)
+  Rendered musics/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 104ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:05:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 257ms (Views: 201.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 21:05:08 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 166ms (Views: 152.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 21:06:12 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 21:06:13 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 21:06:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 21:06:13 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:09:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 240ms (Views: 178.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 21:09:26 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:28:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 52ms
+
+NameError (uninitialized constant Music::ParseModel):
+  app/models/music.rb:2:in `<class:Music>'
+  app/models/music.rb:1:in `<top (required)>'
+  app/controllers/musics_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:29:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 52ms
+
+NameError (uninitialized constant Music::ParseModel):
+  app/models/music.rb:2:in `<class:Music>'
+  app/models/music.rb:1:in `<top (required)>'
+  app/controllers/musics_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:30:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 55ms
+
+NameError (uninitialized constant Music::ParseModel):
+  app/models/music.rb:2:in `<class:Music>'
+  app/models/music.rb:1:in `<top (required)>'
+  app/controllers/musics_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:30:37 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 19ms
+
+NameError (uninitialized constant Music::ParseModel):
+  app/models/music.rb:2:in `<class:Music>'
+  app/models/music.rb:1:in `<top (required)>'
+  app/controllers/musics_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:58:32 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 9ms
+
+NameError (uninitialized constant Music::ParseModel):
+  app/models/music.rb:2:in `<class:Music>'
+  app/models/music.rb:1:in `<top (required)>'
+  app/controllers/musics_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 21:58:45 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 209ms (Views: 183.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 21:58:45 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 21:58:45 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 21:58:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 21:58:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 21:58:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 21:58:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 21:58:46 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 21:58:46 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 21:58:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 21:58:46 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 22:02:55 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 21ms
+
+NameError (uninitialized constant Music::ParseModel):
+  app/models/music.rb:2:in `<class:Music>'
+  app/models/music.rb:1:in `<top (required)>'
+  app/controllers/musics_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 22:20:27 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 36ms
+
+NameError (uninitialized constant Music::ParseModel):
+  app/models/music.rb:2:in `<class:Music>'
+  app/models/music.rb:1:in `<top (required)>'
+  app/controllers/musics_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 152ms (Views: 130.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:48 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:49 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:49 -0500
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"faL701je0f7NVkXKB6xy2CFseHNMkkZKRis6j73ySPo="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+Processing by MusicsController#index as HTML
+Completed 401 Unauthorized in 12ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 176ms (Views: 173.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 22:20:52 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 22:22:08 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 22:22:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 22:22:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 22:22:08 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 22:25:36 -0500
+Processing by MusicsController#index as HTML
+Completed 401 Unauthorized in 6ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-05 22:25:36 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 169ms (Views: 147.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 22:25:37 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 109ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 22:27:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 22:27:04 -0500
+
+
+Started GET "/users/auth/parse" for 127.0.0.1 at 2015-03-05 22:27:07 -0500
+Processing by CallbacksController#passthru as HTML
+  Parameters: {"provider"=>"parse"}
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/parse" for 127.0.0.1 at 2015-03-05 22:27:07 -0500
+Processing by CallbacksController#passthru as HTML
+  Parameters: {"provider"=>"parse"}
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/parse" for 127.0.0.1 at 2015-03-05 22:27:17 -0500
+Processing by CallbacksController#passthru as HTML
+  Parameters: {"provider"=>"parse"}
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/parse" for 127.0.0.1 at 2015-03-05 22:27:17 -0500
+Processing by CallbacksController#passthru as HTML
+  Parameters: {"provider"=>"parse"}
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/parse" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+Processing by CallbacksController#passthru as HTML
+  Parameters: {"provider"=>"parse"}
+  Rendered text template (0.0ms)
+Completed 404 Not Found in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+Processing by MusicsController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 22:56:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 22:56:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 22:56:28 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 22:56:28 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 22:56:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 22:56:28 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 23:42:53 -0500
+Processing by MusicsController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-05 23:42:53 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-05 23:42:53 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-05 23:42:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-05 23:42:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-05 23:42:53 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 23:42:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-05 23:42:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-05 23:42:54 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-05 23:42:54 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-05 23:42:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 23:42:54 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-07 11:52:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+Completed 401 Unauthorized in 27ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-07 11:52:17 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 356ms (Views: 328.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-03-07 11:52:18 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 110ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:19 -0500
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZrESQGAaDO9IRZnM42mJsUlGnWT/pY7EQ8SClpm6dA=", "user"=>{"email"=>"c@noob.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'c@noob.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 36ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZrESQGAaDO9IRZnM42mJsUlGnWT/pY7EQ8SClpm6dA=", "user"=>{"email"=>"c@noob.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 169ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:23 -0500
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-07 11:52:26 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZrESQGAaDO9IRZnM42mJsUlGnWT/pY7EQ8SClpm6dA=", "user"=>{"email"=>"c@noob.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'c@noob.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZrESQGAaDO9IRZnM42mJsUlGnWT/pY7EQ8SClpm6dA=", "user"=>{"email"=>"c@noob.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 157ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:27 -0500
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-07 11:52:50 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZrESQGAaDO9IRZnM42mJsUlGnWT/pY7EQ8SClpm6dA=", "user"=>{"email"=>"orelmfligelman@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'orelmfligelman@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (18.0ms)[0m  UPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["remember_created_at", "2015-03-07 16:52:50.200349"], ["updated_at", "2015-03-07 16:52:50.201349"]]
+  [1m[36m (102.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2015-03-07 16:52:50.396361"], ["last_sign_in_at", "2015-03-06 01:35:10.024276"], ["sign_in_count", 3], ["updated_at", "2015-03-07 16:52:50.399361"]]
+  [1m[35m (126.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 475ms (ActiveRecord: 251.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-07 11:52:50 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 189ms (Views: 179.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:51 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+
+
+Started DELETE "/musics/3" for 127.0.0.1 at 2015-03-07 11:52:56 -0500
+Processing by MusicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d3Sd1YbvmF2X8zSNBtOZubUN9VeA5UKxOHyKC/aIm6Y=", "id"=>"3"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (1.0ms)[0m  SELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "musics" WHERE "musics"."id" = ?  [["id", 3]]
+  [1m[36m (59.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 77ms (ActiveRecord: 61.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:52:56 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 206ms (Views: 200.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:52:57 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.0ms)
+
+
+Started DELETE "/musics/4" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+Processing by MusicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d3Sd1YbvmF2X8zSNBtOZubUN9VeA5UKxOHyKC/aIm6Y=", "id"=>"4"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "musics" WHERE "musics"."id" = ?[0m  [["id", 4]]
+  [1m[35m (48.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 64ms (ActiveRecord: 51.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 169ms (Views: 166.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:02 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:03 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.0ms)
+
+
+Started DELETE "/musics/5" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+Processing by MusicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d3Sd1YbvmF2X8zSNBtOZubUN9VeA5UKxOHyKC/aIm6Y=", "id"=>"5"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (1.0ms)[0m  SELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "musics" WHERE "musics"."id" = ?  [["id", 5]]
+  [1m[36m (207.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 223ms (ActiveRecord: 210.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 145ms (Views: 142.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:04 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.0ms)
+
+
+Started DELETE "/musics/6" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+Processing by MusicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d3Sd1YbvmF2X8zSNBtOZubUN9VeA5UKxOHyKC/aIm6Y=", "id"=>"6"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "musics" WHERE "musics"."id" = ?[0m  [["id", 6]]
+  [1m[35m (51.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 74ms (ActiveRecord: 52.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 133ms (Views: 131.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:06 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+
+
+Started DELETE "/musics/8" for 127.0.0.1 at 2015-03-07 11:53:07 -0500
+Processing by MusicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d3Sd1YbvmF2X8zSNBtOZubUN9VeA5UKxOHyKC/aIm6Y=", "id"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "musics" WHERE "musics"."id" = ?  [["id", 8]]
+  [1m[36m (92.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 110ms (ActiveRecord: 93.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:53:07 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 124ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 11:53:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.0ms)
+
+
+Started DELETE "/musics/9" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+Processing by MusicsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d3Sd1YbvmF2X8zSNBtOZubUN9VeA5UKxOHyKC/aIm6Y=", "id"=>"9"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "musics" WHERE "musics"."id" = ?[0m  [["id", 9]]
+  [1m[35m (42.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 62ms (ActiveRecord: 43.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 11:53:09 -0500
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-07 11:55:34 -0500
+Processing by MusicsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered musics/_form.html.erb (16.0ms)
+  Rendered musics/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 136ms (Views: 109.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-07 11:55:58 -0500
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d3Sd1YbvmF2X8zSNBtOZubUN9VeA5UKxOHyKC/aIm6Y=", "music"=>{"title"=>"dsdf", "description"=>"d", "name"=>"dfdf", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x3818cd0 @tempfile=#<Tempfile:C:/Users/ORELM~1.FLI/AppData/Local/Temp/RackMultipart20150307-8372-13ocp3d>, @original_filename="04 - Within.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"04 - Within.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "04_-_Within.mp3"], ["created_at", "2015-03-07 16:55:58.986147"], ["description", "d"], ["name", "dfdf"], ["title", "dsdf"], ["updated_at", "2015-03-07 16:55:58.986147"]]
+  [1m[36m (76.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 525ms (ActiveRecord: 78.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:55:59 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (No route matches {:action=>"send_file", :controller=>"musics", :filename=>"interview_01.mp3"}):
+    19:       <tr>
+    20:         <td><%= music.title %></td>
+    21:         <td><%= music.description %></td>
+    22:         <td><%=link_to "Inteview 1", :controller => 'musics', :action => 'send_file', :filename => 'interview_01.mp3' %></td>
+    23:         <td><%= audio_tag "{music.attachment_url}" %></td>
+    24:         <td><%= link_to 'Show', music %></td>
+    25:         <td><%= link_to 'Edit', edit_music_path(music) %></td>
+  app/views/musics/index.html.erb:22:in `block in _app_views_musics_index_html_erb__393173077_37522152'
+  app/views/musics/index.html.erb:18:in `_app_views_musics_index_html_erb__393173077_37522152'
+  app/controllers/musics_controller.rb:13:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 11:57:09 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (No route matches {:action=>"send_file", :controller=>"musics", :filename=>"_01._Good_Times_Bad_Times.png"}):
+    19:       <tr>
+    20:         <td><%= music.title %></td>
+    21:         <td><%= music.description %></td>
+    22:         <td><%=link_to "Inteview 1", :controller => 'musics', :action => 'send_file', :filename => '_01._Good_Times_Bad_Times.png' %></td>
+    23:         <td><%= audio_tag "{music.attachment_url}" %></td>
+    24:         <td><%= link_to 'Show', music %></td>
+    25:         <td><%= link_to 'Edit', edit_music_path(music) %></td>
+  app/views/musics/index.html.erb:22:in `block in _app_views_musics_index_html_erb__393173077_41496084'
+  app/views/musics/index.html.erb:18:in `_app_views_musics_index_html_erb__393173077_41496084'
+  app/controllers/musics_controller.rb:13:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:06:32 -0500
+
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  config/routes.rb:7:in `block in <top (required)>'
+  config/routes.rb:2:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:08:33 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (No route matches {:action=>"send_file", :controller=>"musics"}):
+    19:       <tr>
+    20:         <td><%= music.title %></td>
+    21:         <td><%= music.description %></td>
+    22:         <td><%= url_for :controller => 'musics', :action => 'send_file'%></td>
+    23:         <td><%= audio_tag "{music.attachment_url}" %></td>
+    24:         <td><%= link_to 'Show', music %></td>
+    25:         <td><%= link_to 'Edit', edit_music_path(music) %></td>
+  app/views/musics/index.html.erb:22:in `block in _app_views_musics_index_html_erb__393173077_52607304'
+  app/views/musics/index.html.erb:18:in `_app_views_musics_index_html_erb__393173077_52607304'
+  app/controllers/musics_controller.rb:13:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 135ms (Views: 113.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:08:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.0ms)
+
+
+Started GET "/musics/10" for 127.0.0.1 at 2015-03-07 12:08:56 -0500
+Processing by MusicsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT  "musics".* FROM "musics"  WHERE "musics"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered musics/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:08:58 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:08:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:09:20 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 111ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:09:21 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:09:22 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:09:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:09:23 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 106ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:09:23 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:09:23 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:09:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:28 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:28 -0500
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 111ms (Views: 107.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:09:34 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:09:36 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:09:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 132ms (Views: 111.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:39 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:10:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:10:41 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 105ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:10:42 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (1.0ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 106ms (Views: 102.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:10:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:11:27 -0500
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 18ms
+
+NameError (undefined local variable or method `file_path' for #<MusicsController:0x60fb310>):
+  app/controllers/musics_controller.rb:14:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 135ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:11:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-07 12:38:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered musics/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 81ms
+
+SyntaxError (C:/Users/Orel M. Fligelman/hubb_music/app/views/musics/index.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+... link_to 'Downlaod', puts music.attachment.url );@output_buf...
+...                               ^):
+  app/views/musics/index.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/controllers/musics_controller.rb:14:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-07 12:39:21 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 187ms (Views: 182.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:39:22 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-07 12:39:42 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:42 -0500
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:39:43 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:39:45 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 115ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:39:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:39:45 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 114ms (Views: 111.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:39:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:39:46 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 136ms (Views: 132.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:39:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:39:46 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/audios/%7Bmusic.attachment_url%7D" for 127.0.0.1 at 2015-03-07 12:39:46 -0500
+
+ActionController::RoutingError (No route matches [GET] "/audios/%7Bmusic.attachment_url%7D"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-07 12:40:06 -0500
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (1.0ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (No such file or directory @ rb_sysopen - /uploads/music/attachment/10/04_-_Within.mp3):
+    21:         <td><%= music.description %></td>
+    22:         <td><%= link_to url_for :controller => 'musics', :action => 'send_file'%></td>
+    23:         <td><%= audio_tag "{music.attachment_url}" %></td>
+    24:         <td><%= link_to (File.open(music.attachment.url)) %></td>
+    25:         <td><%= link_to 'Show', music %></td>
+    26:         <td><%= link_to 'Edit', edit_music_path(music) %></td>
+    27:         <td><%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/musics/index.html.erb:24:in `initialize'
+  app/views/musics/index.html.erb:24:in `open'
+  app/views/musics/index.html.erb:24:in `block in _app_views_musics_index_html_erb___469002780_47722440'
+  app/views/musics/index.html.erb:18:in `_app_views_musics_index_html_erb___469002780_47722440'
+  app/controllers/musics_controller.rb:14:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAvatarToUsers (20150307174206)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (15.0ms)[0m  [1mALTER TABLE "users" ADD "avatars" json[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150307174206"]]
+  [1m[36m (149.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
