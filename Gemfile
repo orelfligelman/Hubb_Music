@@ -36,11 +36,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'debugger', group: [:development, :test]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'omniauth-parse'
+# gem 'omniauth-soundcloud', '~> 1.0.0'
 gem "carrierwave"
 gem 'bootstrap-sass', '~> 2.3.2'
 gem 'carrierwave-video-thumbnailer'
@@ -52,6 +52,7 @@ gem 'unimidi'
 gem "kaminari" # optional for pagination support
 gem "parse_resource", "~> 1.8.0"
 gem "parse-ruby-client"
+gem 'rack-contrib'
 
 
 

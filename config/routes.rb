@@ -1,10 +1,15 @@
 require 'sidekiq/web'
+
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
   resources :musics
   root to: "musics#index"
   mount Sidekiq::Web, at: '/sidekiq'
-  get 'musics/send_file' => 'musics#send_file'
+  # match 'musics#create' , to: Parse, via: :post
+  # use Rack::SimpleEndpoint, '/ping_monitor' => :get do
+  #     'pong'
+  #   end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

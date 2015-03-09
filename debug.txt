@@ -1,2 +1,30 @@
 puts "*" * 100
 
+ {"Content-Type" => "audio/mpeg"}, {X-Parse-Application-Id => "cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW"}, {" X-Parse-REST-API-Key" => "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd"},
+
+
+
+
+ class Music
+	def initialize(app)
+		@app = app
+	end
+	def call(env)
+	request = Rack::Request.new env
+    request['X-Parse-Application-Id'] = "cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW"
+    request['X-Parse-REST-API-Key'] = "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd"
+  @app.call env
+	 end
+  end
+
+    class Music
+  	def self.call(env)
+    [ 200,                              # 200 indicates success
+		{"Content-Type" => "text/plain"}, [env.inspect]
+    ]
+  end
+end
+
+# Tell Rack what to run our app
+
+run Hello
