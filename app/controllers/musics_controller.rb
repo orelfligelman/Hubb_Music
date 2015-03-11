@@ -1,12 +1,20 @@
 class MusicsController < ApplicationController
+  class << self
+    attr_accessor :BOUNDARY
+  end
   before_action :set_music, only: [:show, :edit, :update, :destroy]
   respond_to :html
+
+  def boundary
+    self.class.BOUNDARY = "AaB03x"
+  end
 
   def send_file
     puts "*" * 100
     file_path = "#{Rails.root}/public/#{params[:attachment]}"
     send_file file_path, :filename => params[:attachment], :disposition => 'attachment'
   end
+
 
   def index
     puts "*" * 100
@@ -29,6 +37,7 @@ class MusicsController < ApplicationController
   def create
     @music = Music.new(music_params)
       if  @music.save
+        parseupload
         redirect_to musics_path, notice: "The video has been uploaded!"
       else
         respond_with(@music)

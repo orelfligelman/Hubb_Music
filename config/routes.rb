@@ -1,5 +1,6 @@
 require 'sidekiq/web'
 Rails.application.routes.draw do
+  resources :bookings
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
   resources :musics
   root to: "musics#index"

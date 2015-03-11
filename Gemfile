@@ -50,8 +50,7 @@ gem 'sinatra', require: false
 gem 'slim'
 gem 'unimidi'
 gem "kaminari" # optional for pagination support
-gem "parse_resource", "~> 1.8.0"
-gem "parse-ruby-client"
+# gem "ParseModel"
 
 
 

@@ -1,0 +1,21 @@
+<h1>Listing bookings</h1>
+
+    <% @bookings.each do |booking| %>
+
+
+<%= link_to 'New Booking', new_booking_path %>
+
+<div id="pricing-table" class="clear">
+  <div class="plan">
+    <h3><%= booking.name %><span><%= booking.price %></span></h3>
+    <a class="signup" href="">Sign up</a>
+  </div>
+
+<br>
+</div>
+
+<td><%= link_to 'Show', booking %></td>
+<td><%= link_to 'Edit', edit_booking_path(booking) %></td>
+<td><%= link_to 'Destroy', booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+<% end %>
