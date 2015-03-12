@@ -4,13 +4,7 @@ class Music < ActiveRecord::Base
 	def set_success(format, opts)
     self.success = true
   end
-
   def parse
-    file = Parse::File.new({
-                               :body => "Frank!",
-                               :local_filename => "hello.txt",
-                               :content_type => "text/plain"
-                           })
-    file.save
+    file = "/Users/adityanarayan/Desktop/orel/Hubb_Music/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 end

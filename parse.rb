@@ -37,6 +37,6 @@ def parseupload
 
 
 
-  curl -X POST -H "X-Parse-Application-Id: cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW" -H "X-Parse-REST-API-Key: nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd" -H "Content-Type: text/plain" -d 'Pong!' https://api.parse.com/1/files/super.txt
-  curl -X POST -H "X-Parse-Application-Id: cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW" -H "X-Parse-REST-API-Key: nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd" -H "Content-Type: application/json" -d '{"name":"test file", "url": { "name": "tfss-9008bb89-54ec-43f1-8ad0-f5a9e70e6b6c-super.txt", "__type": "File"} }' https://api.parse.com/1/classes/PlayerProfile
+  # curl -X POST -H "X-Parse-Application-Id: cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW" -H "X-Parse-REST-API-Key: nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd" -H "Content-Type: text/plain" -d 'Pong!' https://api.parse.com/1/files/super.txt
+  # curl -X POST -H "X-Parse-Application-Id: cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW" -H "X-Parse-REST-API-Key: nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd" -H "Content-Type: application/json" -d '{"name":"test file", "url": { "name": "tfss-152ba0b5-026f-420a-b78d-b924bbd2f05e-super.txt", "__type": "File"} }' https://api.parse.com/1/classes/PlayerProfile
   end

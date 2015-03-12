@@ -233,6 +233,7 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
    config.omniauth :facebook, '1503333586599184', '258ca59ed9352923034291c8354172a1'
+   # config.omniauth :soundcloud, 'a356a2bbf8a1a71d2ddab194a75a5036', '0944142fda5d566f1ac1a496202b7e1d'
    # config.omniauth :parse, 'cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW', 'LUZs1QWRy09F02MfCYp4HMMmc0awCsyRpzxlrEqb'
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
