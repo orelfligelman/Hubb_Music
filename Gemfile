@@ -54,6 +54,7 @@ gem "parse_resource", "~> 1.8.0"
 gem "parse-ruby-client"
 gem 'rack-contrib'
 gem 'rest-client'
+gem 'byebug'
 
 
 

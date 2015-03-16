@@ -35453,3 +35453,820 @@ Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/music/attachmen
   Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
   Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:15:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"a", "description"=>"a", "name"=>"a", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000101bd5860 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8000-1aa0y33>, @original_filename="seniordata.sql", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"seniordata.sql\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "seniordata.sql"], ["created_at", "2015-03-12 02:15:15.566776"], ["description", "a"], ["name", "a"], ["title", "a"], ["updated_at", "2015-03-12 02:15:15.566776"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 91ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/music/attachment/112/seniordata.sql):
+  app/controllers/musics_controller.rb:128:in `initialize'
+  app/controllers/musics_controller.rb:128:in `new'
+  app/controllers/musics_controller.rb:128:in `rest'
+  app/controllers/musics_controller.rb:277:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:17:40 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"a", "description"=>"a", "name"=>"a", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000104750440 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8000-4pfli0>, @original_filename="seniordata.sql", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"seniordata.sql\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "seniordata.sql"], ["created_at", "2015-03-12 02:17:40.330627"], ["description", "a"], ["name", "a"], ["title", "a"], ["updated_at", "2015-03-12 02:17:40.330627"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 404 Not Found in 28ms
+
+ActiveRecord::RecordNotFound (Couldn't find Music without an ID):
+  app/controllers/musics_controller.rb:116:in `rest'
+  app/controllers/musics_controller.rb:278:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:18:56 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"a", "description"=>"a", "name"=>"a", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001081ad368 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8000-1iqvg66>, @original_filename="seniordata.sql", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"seniordata.sql\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "seniordata.sql"], ["created_at", "2015-03-12 02:18:56.326030"], ["description", "a"], ["name", "a"], ["title", "a"], ["updated_at", "2015-03-12 02:18:56.326030"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 404 Not Found in 33ms
+
+ActiveRecord::RecordNotFound (Couldn't find Music without an ID):
+  app/controllers/musics_controller.rb:116:in `rest'
+  app/controllers/musics_controller.rb:278:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:20:45 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"a", "description"=>"a", "name"=>"a", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001012b9150 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8000-1gi8nfo>, @original_filename="seniordata.sql", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"seniordata.sql\"\r\nContent-Type: application/octet-stream\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "seniordata.sql"], ["created_at", "2015-03-12 02:20:45.715410"], ["description", "a"], ["name", "a"], ["title", "a"], ["updated_at", "2015-03-12 02:20:45.715410"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 404 Not Found in 78ms
+
+ActiveRecord::RecordNotFound (Couldn't find Music without an ID):
+  app/controllers/musics_controller.rb:116:in `rest'
+  app/controllers/musics_controller.rb:276:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.5ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (46.7ms)
+Completed 200 OK in 373ms (Views: 370.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-11 22:20:55 -0400
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-11 22:21:00 -0400
+Processing by MusicsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered musics/_form.html.erb (154.7ms)
+  Rendered musics/new.html.erb within layouts/application (182.2ms)
+Completed 200 OK in 254ms (Views: 252.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:21:41 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"d", "description"=>"d", "name"=>"d", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001019ab058 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8000-tuw7so>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-12 02:21:42.007367"], ["description", "d"], ["name", "d"], ["title", "d"], ["updated_at", "2015-03-12 02:21:42.007367"]]
+  [1m[35m (51.5ms)[0m  commit transaction
+Completed 404 Not Found in 94ms
+
+ActiveRecord::RecordNotFound (Couldn't find Music without an ID):
+  app/controllers/musics_controller.rb:116:in `rest'
+  app/controllers/musics_controller.rb:276:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:22:40 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"d", "description"=>"d", "name"=>"d", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001032e5528 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8000-1o66j38>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-12 02:22:40.109381"], ["description", "d"], ["name", "d"], ["title", "d"], ["updated_at", "2015-03-12 02:22:40.109381"]]
+  [1m[35m (39.2ms)[0m  commit transaction
+  [1m[36mMusic Load (0.5ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+Completed 500 Internal Server Error in 103ms
+
+NameError (undefined local variable or method `byebug' for #<MusicsController:0x00000103917f18>):
+  app/controllers/musics_controller.rb:117:in `rest'
+  app/controllers/musics_controller.rb:276:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:23:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"d", "description"=>"d", "name"=>"d", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x0000010391b5f0 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8068-15icj0e>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-12 02:23:13.156950"], ["description", "d"], ["name", "d"], ["title", "d"], ["updated_at", "2015-03-12 02:23:13.156950"]]
+  [1m[36m (30.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.5ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 296ms (Views: 258.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-11 22:34:04 -0400
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-11 22:34:12 -0400
+Processing by MusicsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered musics/_form.html.erb (20.8ms)
+  Rendered musics/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 102ms (Views: 100.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:34:18 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"ef", "description"=>"ed", "name"=>"ew", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001011e8488 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8098-3aios2>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-12 02:34:18.902329"], ["description", "ed"], ["name", "ew"], ["title", "ef"], ["updated_at", "2015-03-12 02:34:18.902329"]]
+  [1m[35m (28.7ms)[0m  commit transaction
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.5ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (53.3ms)
+Completed 200 OK in 209ms (Views: 171.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-11 22:37:12 -0400
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-11 22:37:17 -0400
+Processing by MusicsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered musics/_form.html.erb (19.9ms)
+  Rendered musics/new.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 109ms (Views: 107.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:37:24 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"e", "description"=>"e", "name"=>"efwef", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001031a6130 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150311-8111-17q4l58>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-12 02:37:24.153361"], ["description", "e"], ["name", "efwef"], ["title", "e"], ["updated_at", "2015-03-12 02:37:24.153361"]]
+  [1m[35m (29.1ms)[0m  commit transaction
+Completed 500 Internal Server Error in 73ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/adityanarayan/Desktop/orel/Hubb_Music/public/*):
+  app/controllers/musics_controller.rb:126:in `initialize'
+  app/controllers/musics_controller.rb:126:in `new'
+  app/controllers/musics_controller.rb:126:in `rest'
+  app/controllers/musics_controller.rb:272:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-11 22:47:16 -0400
+
+SyntaxError (/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:119: syntax error, unexpected ':', expecting keyword_end
+      strategy 1: append url to the end of hard
+                 ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:119: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      strategy 1: append url to the end of hard
+                                          ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:304: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/musics_controller.rb:119: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/musics_controller.rb:119: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  app/controllers/musics_controller.rb:304: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-16 10:36:40 -0400
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (65.6ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (121.3ms)
+Completed 200 OK in 608ms (Views: 408.3ms | ActiveRecord: 110.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-16 10:36:41 -0400
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.5ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 135ms (Views: 133.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-16 10:36:41 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-16 10:36:41 -0400
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-16 10:36:41 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-16 10:36:42 -0400
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:36:48 -0400
+Processing by MusicsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered musics/_form.html.erb (2.6ms)
+  Rendered musics/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 132ms (Views: 130.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-16 10:36:58 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"d", "description"=>"d", "name"=>"d", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x0000010115d810 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150316-8111-uuwydw>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-16 14:36:58.966422"], ["description", "d"], ["name", "d"], ["title", "d"], ["updated_at", "2015-03-16 14:36:58.966422"]]
+  [1m[36m (352.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 420ms
+
+NameError (undefined local variable or method `music' for #<MusicsController:0x00000102818a50>):
+  app/controllers/musics_controller.rb:115:in `rest'
+  app/controllers/musics_controller.rb:270:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.6ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-16 10:37:22 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"d", "description"=>"d", "name"=>"d", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001031e8328 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150316-8111-ez051g>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-16 14:37:22.617857"], ["description", "d"], ["name", "d"], ["title", "d"], ["updated_at", "2015-03-16 14:37:22.617857"]]
+  [1m[36m (315.4ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 629ms
+
+NameError (undefined local variable or method `music' for #<MusicsController:0x000001031ebc08>):
+  app/controllers/musics_controller.rb:115:in `rest'
+  app/controllers/musics_controller.rb:270:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-16 10:37:30 -0400
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.5ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (48.5ms)
+Completed 200 OK in 133ms (Views: 117.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-16 10:37:31 -0400
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:37:34 -0400
+Processing by MusicsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered musics/_form.html.erb (2.5ms)
+  Rendered musics/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 81ms (Views: 79.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-16 10:37:39 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"f", "description"=>"f", "name"=>"f", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x0000010130a640 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150316-8111-19r5fjh>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-16 14:37:39.803236"], ["description", "f"], ["name", "f"], ["title", "f"], ["updated_at", "2015-03-16 14:37:39.803236"]]
+  [1m[35m (29.5ms)[0m  commit transaction
+Completed 500 Internal Server Error in 471ms
+
+NameError (undefined local variable or method `musics' for #<MusicsController:0x000001012c2818>):
+  app/controllers/musics_controller.rb:115:in `rest'
+  app/controllers/musics_controller.rb:270:in `create'
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-16 10:38:10 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"f", "description"=>"f", "name"=>"f", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000105b42200 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150316-8111-1dberya>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-16 14:38:10.315519"], ["description", "f"], ["name", "f"], ["title", "f"], ["updated_at", "2015-03-16 14:38:10.315519"]]
+  [1m[35m (33.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 11392ms (ActiveRecord: 34.3ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+Processing by MusicsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mMusic Load (0.5ms)[0m  SELECT "musics".* FROM "musics"
+  Rendered musics/index.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 133ms (Views: 130.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:21 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-16 10:38:22 -0400
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:41:22 -0400
+
+SyntaxError (/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+            :content_type => 'audio/mpeg'
+             ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+        },
+         ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+  app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:41:22 -0400
+
+SyntaxError (/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+            :content_type => 'audio/mpeg'
+             ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+        },
+         ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+  app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:43:34 -0400
+
+SyntaxError (/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+            :'Content-Type: audio/mpeg'
+              ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+        },
+         ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+  app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:43:38 -0400
+
+SyntaxError (/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+            :'Content-Type: audio/mpeg'
+              ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+        },
+         ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+  app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:43:38 -0400
+
+SyntaxError (/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+            :'Content-Type: audio/mpeg'
+              ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+        },
+         ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+  app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:45:05 -0400
+
+SyntaxError (/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+            :'Content-Type' => 'audio/mpeg'
+              ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:124: syntax error, unexpected =>, expecting keyword_end
+            :'Content-Type' => 'audio/mpeg'
+                              ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+        },
+         ^
+/Users/adityanarayan/Desktop/orel/Hubb_Music/app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end):
+  app/controllers/musics_controller.rb:124: syntax error, unexpected tSYMBEG, expecting '}'
+  app/controllers/musics_controller.rb:124: syntax error, unexpected =>, expecting keyword_end
+  app/controllers/musics_controller.rb:125: syntax error, unexpected '}', expecting keyword_end
+  app/controllers/musics_controller.rb:129: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adityanarayan/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/musics/new" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+Processing by MusicsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered musics/_form.html.erb (6.2ms)
+  Rendered musics/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 121ms (Views: 103.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:36 -0400
+
+
+Started POST "/musics" for 127.0.0.1 at 2015-03-16 10:46:44 -0400
+Processing by MusicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4OF7Mtt2Z8SEi+AbDAWGHmpxMUiA2I4vpRJONARsCiQ=", "music"=>{"title"=>"d", "description"=>"d", "name"=>"d", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000001010d5ff0 @tempfile=#<Tempfile:/var/folders/5z/qs5vf6h52ml4rzkzx1fjwyh40000gn/T/RackMultipart20150316-8111-1ip60wt>, @original_filename="09_-_Beyond.mp3", @content_type="audio/mp3", @headers="Content-Disposition: form-data; name=\"music[attachment]\"; filename=\"09_-_Beyond.mp3\"\r\nContent-Type: audio/mp3\r\n">}, "commit"=>"Create Music"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "musics" ("attachment", "created_at", "description", "name", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["attachment", "09_-_Beyond.mp3"], ["created_at", "2015-03-16 14:46:44.961799"], ["description", "d"], ["name", "d"], ["title", "d"], ["updated_at", "2015-03-16 14:46:44.961799"]]
+  [1m[36m (29.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/musics
+Completed 302 Found in 11504ms (ActiveRecord: 30.1ms)
+
+
+Started GET "/musics" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+Processing by MusicsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mMusic Load (0.5ms)[0m  [1mSELECT "musics".* FROM "musics"[0m
+  Rendered musics/index.html.erb within layouts/application (52.3ms)
+Completed 200 OK in 136ms (Views: 134.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/callbacks.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/musics.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/bookings.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/bookings.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/callbacks.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/musics.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/parse.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-16 10:46:56 -0400

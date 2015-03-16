@@ -112,70 +112,30 @@ class MusicsController < ApplicationController
 
   def rest
     puts "hello" * 500
-    # file = "/Users/adityanarayan/Desktop/orel/Hubb_Music/public/uploads/tmp/test.txt"
-    file = @music.attachment_url
+     file = "/Users/adityanarayan/Desktop/orel/Hubb_Music/public/#{@music.attachment.url}"
     puts file
-
+  puts
     request = RestClient::Request.new(
         :method => :post,
-        :url => 'https://api.parse.com/1/files/hello.txt',
+        :url => 'https://api.parse.com/1/files/daftpunk.mp3',
         :headers => {
             :'X-Parse-Application-Id' => "cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW",
-            :'X-Parse-REST-API-Key' => "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd"
+            :'X-Parse-REST-API-Key' => "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd",
+            :'Content-Type' => 'audio/mpeg'
         },
          :payload => {
             :multipart => true,
             :file => File.new(file, 'rb')
         })
-
     response =  request.execute
-
     parsed_json = JSON(response)
-
     puts parsed_json
-
     puts parsed_json["name"]
 
-    # request = RestClient::Request.new(
-    #     :method => :post,
-    #     :url => 'https://api.parse.com/1/classes/PlayerProfile',
-    #     :headers => {
-    #         :'X-Parse-Application-Id' => "cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW",
-    #         :'X-Parse-REST-API-Key' => "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd"
-    #
-    #     },
-    #  #  :payload => {
-    #         :name => "my file",
-    #         :url => {
-    #             :__type => "File",
-    #             :name => parsed_json["name"]
-    #
-    #         }
-    #   # }
-    # )
-    # #response =  request.execute
-    # #puts response
-    #
-    # request = RestClient::Request.new(
-    #     :method => :post,
-    #     :url => 'https://api.parse.com/1/classes/PlayerProfile',
-    #     :headers => {
-    #         :'X-Parse-Application-Id' => "cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW",
-    #         :'X-Parse-REST-API-Key' => "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd"
-    #
-    #     },
-    #     #  :payload => {
-    #     :name => "my file",
-    #     :url => {
-    #         :__type => "File",
-    #         :name => parsed_json["name"]
-    #
-    #     }
-    # # }
-    # )
+
     url = "https://api.parse.com/1/classes/PlayerProfile"
     payload = {
-        :name => "my file",
+        :name => "#{@music.title}",
         :url => {
             :__type => "File",
             :name => parsed_json["name"]
@@ -208,32 +168,16 @@ class MusicsController < ApplicationController
 
         })
 
-    #request.execute
 
-    # RestClient.post 'https://api.parse.com/1/classes/PlayerProfile',
-    #                 :headers => {
-    #                     :'X-Parse-Application-Id' => "cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW",
-    #                     :'X-Parse-REST-API-Key' => "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd"
-    #                 },
-    #                 :name => "my file",
-    #                 :url => {
-    #                     :__type => "File",
-    #                     :name => parsed_json["name"]
-    #
-    #                 }
-    #
-    uri = URI('https://api.parse.com/1/classes/PlayerProfile' )
+    uri = URI('https://api.parse.com/1/classes/PlayerProfile')
     req = Net::HTTP::Post.new(uri)
     req['X-Parse-Application-Id'] ="cg6iHL8YwU72M53e8U0XZkNeE698IVbBDo2o5LEW"
     req['X-Parse-REST-API-Key'] = "nd8iZTjMxdTcqHSNMuGign8RpvirPaLHcs8gLHKd"
     req['Content-Type'] = 'application/json'
     http = Net::HTTP.new(uri.host, uri.port)
-    req.body =payload.to_json
+    req.body = payload.to_json
     http.use_ssl = true
     http.request(req)
-
-
-
 
     #RestClient.post url, payload.to_json, { :content_type => "application/json", :headers => headers.to_json}
 
