@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310190138) do
+ActiveRecord::Schema.define(version: 20150318170045) do
 
   create_table "bookings", force: true do |t|
     t.string   "name"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 20150310190138) do
     t.datetime "updated_at"
     t.string   "attachment"
     t.string   "name"
+  end
+
+  create_table "parseusers", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 # Could not dump table "users" because of following NoMethodError

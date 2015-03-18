@@ -40,6 +40,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "parse-ruby-client"
 gem "carrierwave"
 gem 'bootstrap-sass', '~> 2.3.2'
 gem 'carrierwave-video-thumbnailer'

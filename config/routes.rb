@@ -1,11 +1,14 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :parseusers
+
   resources :bookings
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
   resources :musics
   root to: "musics#index"
   mount Sidekiq::Web, at: '/sidekiq'
+
   # match 'musics#create' , to: Parse, via: :post
   # use Rack::SimpleEndpoint, '/ping_monitor' => :get do
   #     'pong'

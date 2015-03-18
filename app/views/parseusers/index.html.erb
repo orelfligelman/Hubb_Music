@@ -1,0 +1,29 @@
+<h1>Listing parseusers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parseusers.each do |parseuser| %>
+      <tr>
+        <td><%= parseuser.name %></td>
+        <td><%= parseuser.email %></td>
+        <td><%= parseuser.password %></td>
+        <td><%= link_to 'Show', parseuser %></td>
+        <td><%= link_to 'Edit', edit_parseuser_path(parseuser) %></td>
+        <td><%= link_to 'Destroy', parseuser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parseuser', new_parseuser_path %>
